@@ -25,16 +25,4 @@ export class ProjectService {
   createProject(project: Project) {
     return this.http.post('/api/v1/project/create', {...project});
   }
-
-  // checkUserProjects(): Observable<Project[]> {
-  //   this.http.get<Project[]>('/api/v1/project/usersProject').subscribe(
-  //     (response: Project[]) => {
-  //       return response;
-  //     },
-  //     (error: any) => {
-  //       console.error('Błąd podczas pobierania projektów użytkownika:', error);
-  //     }
-  //   );
-  // }
-
 }
